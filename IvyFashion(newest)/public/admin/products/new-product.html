@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head >
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>Administration : New Product</title>
+  
+  
+  <script defer  type="module" src="/javascripts/new-product.js"></script>    
+</head>
+<body>
+   <!-- Top Bar Start -->
+<div class="top-bar">
+  <div class="top-flex-container">
+      
+              <div class="top-item">
+                  <a href="index.html">
+                      <img src="/image/logo.png" alt="Logo">
+                  </a>
+              </div> 
+     
+  </div>
+
+</div>
+
+<!-- Top Bar End -->  
+
+<!-- Nav Bar start-->
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="newarrival.html">New Arrivals</a>
+    <a href="categories.html">Categories</a>
+    <a href="BestSelling.html">Best Selling</a>
+    <a href="sale.html">Sale</a>
+    <a href="campaign.html">Campaign</a> 
+    <a href="contact.html">Contact Us</a> 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script> 
+<!-- Nav Bar end--> 
+<div class="grid-container">
+  <!--Vänterkolumn-->
+      <div class="item1">
+                             
+      
+             
+         Admintration
+         
+         
+         
+      </div>
+  
+  <!--huvudkolumn-->
+      <div class="item2">
+          <h1>New Product</h1>
+              
+      </div>
+  
+      <div class="item3">
+        <form>         
+           <div class="row mb-3">
+            <div class="col-6">
+              <label for="name" class="form-label"> Name</label>
+              <input type="text" name="name" id="name" class="form-control" placeholder=" Name" aria-label=" name">
+            </div>              
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-6">
+              <label for="description" class="form-label">Description</label>
+              <textarea type="text" name="description" id="description" class="form-control" placeholder="Description" aria-label="description"></textarea>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-6">
+              <label for="image" class="form-label">Image URL</label>
+              <input type="text" name="imageUrl" id="image" class="form-control" placeholder="Image URL" aria-label="image">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-6">
+              <label for="articleNumber" class="form-label" >Article number</label>
+              <input type="text" name="articleNumber" id="articleNumber" class="form-control" placeholder="article number" aria-label="articlenumber">
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-6">
+              <label for="price" class="form-label">Price</label>
+              <input type="text" name="price" id="price" class="form-control" placeholder="price in SEK" aria-label="price">
+            </div>
+          </div>
+          
+          <button class="btn btn-primary">Add</button>
+
+        </form>
+        <!--
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Article  Number</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+              
+          </tbody>
+        </table>-->
+        
+        <template id="product-table-row">
+            <tr>
+              <th class ="name"></th>
+              <th class ="articleNumber"></th>
+              <th class ="price"></th>
+            </tr>
+            </template>
+       
+        
+     
+      
+      </div>
+      <div class="item4">
+
+      <p> Copyright@ IVY ANALISA </p>
+      </div>
+
+  </div>
+
+</body>
+</html>
